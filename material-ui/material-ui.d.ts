@@ -395,7 +395,7 @@ declare namespace __MaterialUI {
     }
 
     interface DropDownIconProps extends React.Props<DropDownIcon> {
-        menuItems: Menu.MenuItemRequest[];
+        menuItems?: Menu.MenuItemRequest[];
         closeOnMenuItemTouchTap?: boolean;
         iconStyle?: React.CSSProperties;
         iconClassName?: string;
@@ -518,7 +518,7 @@ declare namespace __MaterialUI {
         disableSwipeToOpen?: boolean;
         docked?: boolean;
         header?: React.ReactElement<any>;
-        menuItems: Menu.MenuItemRequest[];
+        menuItems?: Menu.MenuItemRequest[];
         onChange?: Menu.ItemTapEventHandler;
         onNavOpen?: () => void;
         onNavClose?: () => void;
@@ -618,7 +618,7 @@ declare namespace __MaterialUI {
         interface MenuProps extends React.Props<Menu> {
             index: number;
             text?: string;
-            menuItems: MenuItemRequest[];
+            menuItems?: MenuItemRequest[];
             zDepth?: number;
             active?: boolean;
             onItemTap?: ItemTapEventHandler;
@@ -784,7 +784,7 @@ declare namespace __MaterialUI {
         displayMember?: string;
         valueMember?: string;
         autoWidth?: boolean;
-        menuItems: Menu.MenuItemRequest[];
+        menuItems?: Menu.MenuItemRequest[];
         menuItemStyle?: React.CSSProperties;
         selectedIndex?: number;
         underlineStyle?: React.CSSProperties;
